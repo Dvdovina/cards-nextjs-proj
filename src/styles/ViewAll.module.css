@@ -1,0 +1,81 @@
+.page {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  padding: 6rem;
+  width: 100%;
+  background-color: #2a2c2f;
+}
+
+.container {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  color: rgb(225, 216, 216);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 260px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(101, 126, 125, 0.5);
+  background-image: url("/cat.png");
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: 95% 95%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 1px #27282b;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.paragraph {
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  color: rgb(225, 216, 216);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+}
+
+.backButton {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 2px 1px #27282b;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #555;
+}
