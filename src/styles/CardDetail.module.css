@@ -18,7 +18,6 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 1280px;
-  padding: 3%;
   width: 100%;
 }
 
@@ -28,43 +27,29 @@
   margin-bottom: 20px;
 }
 
-.cards {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .card {
   background-color: rgba(101, 126, 125, 0.5);
-  background-image: url("../../public/blackCat.png");
-  background-position: 95% 95%;
+  background-image: url("../../public/coolcat.png");
+  background-position: 50% 100%;
   background-repeat: no-repeat;
-  background-size: 80px;
+  background-size: 100px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px 1px #27282b;
   color: rgb(225, 216, 216);
-  display: flex;
-  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  height: 260px;
-  overflow: hidden;
+  height: 50vh;
   padding: 20px;
   text-align: center;
+  width: 40vw;
 }
 
 .paragraph {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
   color: rgb(225, 216, 216);
-  display: -webkit-box;
-  font-size: 20px;
-  line-clamp: 4;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 25px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-.viewAllButton {
+.backButton {
   background-color: #333;
   border-radius: 10px;
   border: none;
@@ -76,6 +61,6 @@
   width: 200px;
 }
 
-.viewAllButton:hover {
+.backButton:hover {
   background-color: #555;
 }

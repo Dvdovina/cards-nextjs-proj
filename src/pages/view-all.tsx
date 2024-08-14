@@ -20,13 +20,15 @@ export default function ViewAll() {
           <h1 className={styles.title}>All Cat Facts</h1>
           <section className={styles.cards}>
             {data?.map((item: any, index: number) => (
-              <div key={index} className={styles.card}>
-                <p className={styles.paragraph}>
-                  {item.text.length > 100
-                    ? item.text.substring(0, 100) + "..."
-                    : item.text}
-                </p>
-              </div>
+              <Link href={`/card/${item._id}`} key={index}>
+                <div className={styles.card}>
+                  <p className={styles.paragraph}>
+                    {item.text.length > 100
+                      ? item.text.substring(0, 100) + "..."
+                      : item.text}
+                  </p>
+                </div>
+              </Link>
             ))}
           </section>
           <Link href="/">

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; 
+import "swiper/css";
 import Head from "next/head";
 import { useGetItemsQuery } from "../redux/apiSlice";
 import styles from "../styles/Home.module.css";
@@ -22,20 +22,18 @@ export default function Home() {
           <h1 className={styles.title}>Cat Facts</h1>
           <section className={styles.cards}>
             <Swiper
-              spaceBetween={20} 
-              slidesPerView={3} 
-              loop={true} 
-              style={{ width: '100%' }}
+              spaceBetween={20}
+              slidesPerView={3}
+              loop={true}
+              style={{ width: "100%" }}
             >
               {data?.map((item: any, index: number) => (
                 <SwiperSlide key={index}>
-                  <div className={styles.card}>
-                    <p className={styles.paragraph}>
-                      {item.text.length > 100
-                        ? item.text.substring(0, 100) + "..."
-                        : item.text}
-                    </p>
-                  </div>
+                  <Link href={`/card/${item._id}`}>
+                    <div className={styles.card}>
+                      <p className={styles.paragraph}>{item.text}</p>
+                    </div>
+                  </Link>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -50,4 +48,3 @@ export default function Home() {
     </>
   );
 }
-

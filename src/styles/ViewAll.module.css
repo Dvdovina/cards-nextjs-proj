@@ -1,79 +1,79 @@
 .page {
   align-items: center;
+  background-color: #2a2c2f;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
   min-height: 100vh;
-  padding: 6rem;
   width: 100%;
-  background-color: #2a2c2f;
 }
 
 .container {
-  max-width: 1280px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 3%;
+  width: 100%;
 }
 
 .title {
+  color: rgb(225, 216, 216);
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
-  color: rgb(225, 216, 216);
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   width: 100%;
 }
 
 .card {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 260px;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: rgba(101, 126, 125, 0.5);
   background-image: url("/cat.png");
-  background-size: 80px;
-  background-repeat: no-repeat;
   background-position: 95% 95%;
+  background-repeat: no-repeat;
+  background-size: 80px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px 1px #27282b;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 260px;
+  justify-content: space-between;
+  overflow: hidden;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
 }
 
 .paragraph {
-  font-size: 20px;
-  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   color: rgb(225, 216, 216);
+  font-size: 20px;
   overflow: hidden;
-  text-overflow: ellipsis;
   padding: 10px;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 .backButton {
-  padding: 10px 20px;
   background-color: #333;
-  color: #fff;
-  width: 200px;
   border-radius: 10px;
-  box-shadow: 10px 10px 2px 1px #27282b;
   border: none;
+  box-shadow: 10px 10px 2px 1px #27282b;
+  color: #fff;
   cursor: pointer;
+  padding: 10px 20px;
   transition: background-color 0.3s ease;
+  width: 200px;
 }
 
 .backButton:hover {
