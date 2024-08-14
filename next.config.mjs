@@ -1,6 +1,11 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  basePath: "/cards-nextjs-proj", 
+  output: "export",  
+  trailingSlash: true,  
+  reactStrictMode: true,  
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
